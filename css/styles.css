@@ -1,0 +1,31 @@
+
+.names{
+	text-align: left;
+	font-size: 15px;
+
+}
+
+.ratings{
+	text-align: center;
+}
+.myMechanics{
+	margin-top: 10px;
+
+}
+.contact-heading{
+	text-align: center;
+
+}
+.phone{
+	text-align: center;
+}
+.address{
+	text-align: center;
+}
+.email{
+	margin-left: 56px;
+}
+.cont{
+	border: 1px solid black;
+	height: 500px;;  	
+}
