@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 $("#submit").click(function(){
   /*******Collecting Vehicle Model Details*****/
