@@ -6,45 +6,62 @@ $("#submit").click(function(){
   document.getElementById("model").innerHTML =
   (model.options[model.selectedIndex].text).toUpperCase();
 
+  var  y = model.options[model.selectedIndex].text;
+
   /*******Collecting Location Details*****/
   var location = document.getElementById("locationSelection");
   document.getElementById("loc").innerHTML =
   (location.options[location.selectedIndex].text).toUpperCase();
 
-var  y = model.options[model.selectedIndex].text;
 var  x = location.options[location.selectedIndex].text;
 
   if(x =="Ngong Road"){
     $("#jane, #adams, #ken, #bill, #caka, #faith, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
     $("#oscar").show();
     $("#john").show();
+    $("#ser").hide();
+    return;
   }else if(x=="Thika Road"){
     $("#oscar, #ken, #bill, #caka, #faith, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
     $("#jane").show();
     $("#adams").show();
+    $("#ser").hide();
+    return;
   }else if(x=="Kiambu Road"){
     $("#oscar, #john, #jane, #adams, #caka, #faith, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
     $("#ken").show();
     $("#bill").show();
+    $("#ser").hide();
+    return;
   }else if(x=="Eastlands"){
     $("#oscar, #john, #jane, #adams, #ken, #bill, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
     $("#caka").show();
     $("#faith").show();
+    $("#ser").hide();
+    return;
   }else if(x=="Westlands") {
     $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #faith, #eduwin, #mwangi, #yussuf, #mwanza, #mercy").hide();
     $("#eduwin").show();
     $("#sheila").show();
+    $("#ser").hide();
+    return;
   }else if(x=="Jogoo Road") {
     $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #faith, #eduwin, #sheila, #mwanza, #mercy").hide();
     $("#mwangi").show();
     $("#yussuf").show();
+    $("#ser").hide();
+    return;
+    return;
   }else if(x=="Nairobi CBD") {
     $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #faith, #eduwin, #sheila").hide();
     $("#mwanza").show();
     $("#mercy").show();
+    $("#ser").hide();
+    return;
   }else if(y=="--Select Your Car Model--" || x=="--Select Your Location--"){
-    $("#ken, #jane, #oscar, #adams, #caka, #bill, #john").hide();
-    alert("Please Enter your Car model and location to Find our Mechanics.");
+    $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #faith, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
+    document.getElementById("ser").innerHTML = "Please Enter your Car model and location to Find our Mechanics !";
+    return;
   }
 })
 
@@ -64,7 +81,7 @@ $(".flip-card-back button").click(function(){
 
 /***********Collect users Message******/
 $("#message").click(function(){
-  var names = $("#name").val();
+  var names = ($("#name").val()).toUpperCase();
   var emails = $("#mail").val();
   var comment = $("#comments").val();
 
@@ -79,6 +96,7 @@ $("#message").click(function(){
     return;
   }else{
     document.getElementById("con").innerHTML = names + " we have received your message. Thank you for reaching out to us.";
+    $("#conta").hide();
     return;
   }
 });
