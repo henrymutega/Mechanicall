@@ -15,31 +15,31 @@ var  y = model.options[model.selectedIndex].text;
 var  x = location.options[location.selectedIndex].text;
 
   if(x =="Ngong Road"){
-    $("#jane, #adams, #ken, #bill, #caka, #peter, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
+    $("#jane, #adams, #ken, #bill, #caka, #faith, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
     $("#oscar").show();
     $("#john").show();
   }else if(x=="Thika Road"){
-    $("#oscar, #ken, #bill, #caka, #peter, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
+    $("#oscar, #ken, #bill, #caka, #faith, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
     $("#jane").show();
     $("#adams").show();
   }else if(x=="Kiambu Road"){
-    $("#oscar, #john, #jane, #adams, #caka, #peter, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
+    $("#oscar, #john, #jane, #adams, #caka, #faith, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
     $("#ken").show();
     $("#bill").show();
   }else if(x=="Eastlands"){
     $("#oscar, #john, #jane, #adams, #ken, #bill, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").hide();
     $("#caka").show();
-    $("#peter").show();
+    $("#faith").show();
   }else if(x=="Westlands") {
-    $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #peter, #eduwin, #mwangi, #yussuf, #mwanza, #mercy").hide();
+    $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #faith, #eduwin, #mwangi, #yussuf, #mwanza, #mercy").hide();
     $("#eduwin").show();
     $("#sheila").show();
   }else if(x=="Jogoo Road") {
-    $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #peter, #eduwin, #sheila, #mwanza, #mercy").hide();
+    $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #faith, #eduwin, #sheila, #mwanza, #mercy").hide();
     $("#mwangi").show();
     $("#yussuf").show();
   }else if(x=="Nairobi CBD") {
-    $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #peter, #eduwin, #sheila").hide();
+    $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #faith, #eduwin, #sheila").hide();
     $("#mwanza").show();
     $("#mercy").show();
   }else if(y=="--Select Your Car Model--" || x=="--Select Your Location--"){
@@ -49,6 +49,37 @@ var  x = location.options[location.selectedIndex].text;
 })
 
 $("#display").click(function(){
-  $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #peter, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").toggle();
-})
+  $("#oscar, #john, #jane, #adams, #ken, #bill, #caka, #faith, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy").toggle();
+});
+
+/******Displaying Contact Detils**********/
+$(".flip-card-back button").click(function(){
+  $(".cont1, .cont2, .cont3, .cont4, .cont5, .cont6, .cont7, .cont8, .cont9, .cont10, .cont11, .cont12, .cont13, .cont14").toggle();
+  $(".flip-card-back button").hide();
+});
+  $(".cont1, .cont2, .cont3, .cont4, .cont5, .cont6, .cont7, .cont8, .cont9, .cont10, .cont11, .cont12, .cont13, .cont14").click(function(){
+  $(".flip-card-back button").toggle();
+  $(".cont1, .cont2, .cont3, .cont4, .cont5, .cont6, .cont7, .cont8, .cont9, .cont10, .cont11, .cont12, .cont13, .cont14").hide();
+});
+
+/***********Collect users Message******/
+$("#message").click(function(){
+  var names = $("#name").val();
+  var emails = $("#mail").val();
+  var comment = $("#comments").val();
+
+  if(names== "" ){
+    document.getElementById("conta").innerHTML = "Please enter your name !";
+    return;
+  }else if(emails==""){
+    document.getElementById("conta").innerHTML = "Please enter your email !";
+    return;
+  }else if(comment=="") {
+    document.getElementById("conta").innerHTML = "Please enter your message !";
+    return;
+  }else{
+    document.getElementById("con").innerHTML = names + " we have received your message. Thank you for reaching out to us.";
+    return;
+  }
+});
 });
