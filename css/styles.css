@@ -43,13 +43,17 @@
 {
 	width: 30%;
 }
-#conta
+#conta, #ser
 {
 	color: red;
 }
-#con
+#con, #model, #loc
 {
 	color: green;
+}
+marquee
+{
+	color: orange;
 }
 .flip-card-back button
 {
