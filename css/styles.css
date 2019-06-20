@@ -48,3 +48,10 @@
 .about{
 	text-align: center;
 }
+hr {
+	height:1px; 
+	border:none; 
+	color:#000; 
+	background-color:#000; 
+	width:30%; 
+	margin: 35%;}
