@@ -1,3 +1,4 @@
+/*landingPage*/
 .names{
 	text-align: left;
 	font-size: 15px;
@@ -268,50 +269,8 @@ filter:blur(0px);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- .allcontacts {
-	font-family: 'PT Sans', sans-serif;
-	-webkit-column-count: 3; 
-  -moz-column-count: 3; 
-  column-count: 3;
- }
+-----------------------------------------------
+/*aboutUs*/
  .names {
 	text-align: left;
 	font-size: 15px;
@@ -320,40 +279,28 @@ filter:blur(0px);
 	text-align: center;
  }
  
- .contact-heading {
-	color: black;
- }
- h3:hover{
-	 text-decoration: underline overline orange;
- }
- .address-heading{
-	 color: black;
-	 text-align: center;
- }
- .email-heading{
-	 color: black;
-	 text-align: center;
- }
- 
- .phone {
-	margin-left: 110px;
-	font-size: 17px;
- }
- .address {
-	margin-left: 5px;
+
+.about{
 	text-align: center;
- }
- .email {
-	margin-left: 56px;
- }
- .cont {
-	height: 70px;
-	color: grey;
-	padding-top: 150px;
- }
- .checked {
-	color: orange;
- }
- .material-icon2 {
-	color: black;
- }
+	padding-top: 120px;
+	padding-bottom: 150px;
+}
+.about-heading{
+	font-size: 50px;
+}
+.about-content{
+	font-size:20px;
+}
+hr {
+	height:1px; 
+	border:none; 
+	color:#000; 
+	background-color:#000; 
+	width:30%; 
+	/* margin: 35%; */
+}
+.quote, .pg{
+	margin-left: 35%;
+	margin-right: 18%;
+}
+
