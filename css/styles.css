@@ -15,6 +15,83 @@
 .checked {
   color: orange;
 }
+#oscar, #john, #jane, #adams, #ken, #bill, #caka, #peter, #eduwin, #sheila, #mwangi, #yussuf, #mwanza, #mercy
+{
+	display: none;
+	border-style: inset;
+	padding: 30px;
+}
+.body
+{
+	background-color: #a66b59;
+}
+.form1
+{
+	margin-top: 10px;
+	text-align: center;
+	border-style: solid;
+	margin-bottom: 50px;
+	padding: 20px;
+}
+.logo11{
+	background-image: url("../images/logo4.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.logo22{
+	background-image: url("../images/logo4.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+h1
+{
+	font-size: 40px;
+	margin-top: 80px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #bf7c40;
+  color: white;
+  transform: rotateY(180deg);
+}
+
 *,body{
 	margin: 0;
 	padding: 0;
