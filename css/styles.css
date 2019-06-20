@@ -26,13 +26,24 @@ body
 }
 .form1
 {
-	margin-top: 100px;
+	margin-top: 10px;
 	text-align: center;
 	border-style: solid;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-bottom: 50px;
+	padding: 20px;
+}
+.logo11{
+	background-image: url("../images/logo4.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.logo22{
+	background-image: url("../images/logo4.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 h1
 {
 	font-size: 40px;
+	margin-top: 80px;
 }
